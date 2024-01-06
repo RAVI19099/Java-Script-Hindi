@@ -1,12 +1,11 @@
-var arr = [1,2,3,4]
-console.log(arr)
-var obj  = {
-    0:1,
-    1:2,
-    2:3,
-    3:4
+var sec = 1;
+function say(){
+    console.log("hey",sec);
+    sec++;
+    if(sec==5){
+        clearInterval(id);
+    }
 }
-
-for(var prop in obj ){
-    console.log(obj["prop"]);
-}
+//setTimeout(say,1000);
+//for repetively 
+var id=setInterval(say,1000);
